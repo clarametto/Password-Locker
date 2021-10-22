@@ -197,7 +197,25 @@ def main():
             print(f"Hello {user_name} \n Your account have been created successfully. \n Welcome !!!  \n You can now write LG to login. \n")
 
 
-        # elif short_code == "ds":
+        elif short_code == "ds":
+            '''
+            displays user names and details
+            '''
+            if display_users():
+                print("\n")
+                print("#"*20)
+                print("Below is a list of current users prt\n")
+
+                for user in display_users():
+                    print(f"{user.user_name}")
+                    print("*"*20)
+
+            else:
+                print("\n")
+                print("No user found in Password locker. \n Write CA to create yours. ")
+                print("\n")
+                
+        
         # elif short_code == "lo":
         # elif short_code == "exit":
         # else
