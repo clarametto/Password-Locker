@@ -216,9 +216,20 @@ def main():
                 print("\n")
                 
         
-        # elif short_code == "lo":
-        # elif short_code == "exit":
-        # else
+        # elif short_code == "lg":
+        elif short_code == "exit":
+            '''
+            leaving password locker account
+            '''
+            print("\n")
+            print("Good bye, see you next time. \n To return just type:python3 run.py")
+
+
+        else:
+            print("\n")
+            print(f''' That choice is invalid. Please check {short_code}
+            Please use correct short code''')
+            print("\n")
 
 
 
