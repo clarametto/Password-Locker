@@ -69,3 +69,87 @@ def display_users():
 
     return User.display_user()
 
+
+def create_credentails(user_name, name, password):
+
+    '''
+    Function to create a credential 
+    Args:
+        user_name: username for Password Locker
+        name: name of the account 
+        password: associated password for the account
+    '''
+
+
+    new_credentails = Credentials(user_name, name, password)
+
+    return new_credentails
+
+
+def save_credentials(credentials):
+
+    '''
+    Function to save credentials
+    Args:
+        credentials: credentials to be saved
+    '''
+
+    credentials.save_credentials()
+
+
+def check_existing_credentials(name):
+
+    '''
+    Function that checks existence of user credentials
+    Args:
+        name: credentials name
+    '''
+
+    return Credentials.credentials_exists(name)
+
+
+def display_credentials(password):
+
+    '''
+    Function that returns all the saved credentials
+    '''
+
+    return Credentials.display_credentials(password)
+
+
+def create_generated_password(name):
+
+    '''
+    Function that generates a password for the user 
+    Args:
+        name : the name of the account
+    '''
+
+
+    password = Credentials.generated_password()
+
+    return password
+
+
+def find_credentials(credentials_name, credentials_password):
+    
+    '''
+    Function to find credentials based on credentials name given
+    '''
+
+
+    return Credentials.find_credentials(credentials_name, credentials_password)
+
+
+def delete_credentials(name):
+    
+    '''
+    Function to delete credentials
+    Args:
+        name: name of credentials
+    '''
+
+
+    Delete = Credentials.delete_credentials()
+
+    
