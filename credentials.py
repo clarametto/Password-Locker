@@ -25,6 +25,36 @@ class Credentials:
         self.user_name =user_name
         self.credentials_name = credentials_name
         self.credentials_password = credentials_password
+
+    def save_credentials(self):
+        '''
+        method helps to save credentials in credentials_list
+        '''
+        Credentials.credentials_list.append(self)
         
+    @classmethod
+    def generated_password(cls):
+        '''
+        method that generate rondom password for user
+        '''
+
+
+        #length of password to be generated
+        pass_length = 8 
+
+        #random characters to chosen, alpha numeric
+        alpha_num = string.ascii_uppercase + string.ascii_lowercase + string.digits
+
+        password = "".join(choice(alpha_num) for index in range(pass_length))
+        return password
+
+
+   
+
+
+
+if __name__ =='__main__':
+    unittest.main()
+
 
     
