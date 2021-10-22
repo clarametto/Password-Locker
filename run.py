@@ -1,4 +1,6 @@
 from user import User
+
+# from user import User
 from credentials import Credentials
 
 
@@ -151,5 +153,62 @@ def delete_credentials(name):
 
 
     Delete = Credentials.delete_credentials()
+
+     
+
+#my main function
+def main():
+    '''
+    function that will run password locker application
+
+    '''
+    while True:
+        '''
+        looping through the entire application
+        '''
+
+        print("""Short codes to select: 
+        ca = Create Account: password locker
+        ds = display name and details of the user
+        lg = login your account
+        exit = exit password locker application """)
+
+        short_code = input().lower()
+
+
+        if short_code == "ca":
+            '''
+            creating user account
+            '''
+
+            print("\n")
+            print("Your new password locker account: ")
+            print("*"*8)
+            print("Enter username: ")
+            user_name = input()
+
+            print("Create password: ")
+            user_password = input()
+
+            #saving user inputs
+            save_users(create_user(user_name, user_password))
+
+            print("\n")
+            print(f"Hello {user_name} \n Your account have been created successfully. \n Welcome !!!  \n You can now write LG to login. \n")
+
+
+        # elif short_code == "ds":
+        # elif short_code == "lo":
+        # elif short_code == "exit":
+        # else
+
+
+
+
+
+  
+if __name__ == '__main__':
+    main()
+
 
     

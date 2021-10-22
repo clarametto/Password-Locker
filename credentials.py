@@ -2,7 +2,7 @@ import unittest
 from random import choice
 import string
 
-from user import User
+# from user import User
 
 
 
