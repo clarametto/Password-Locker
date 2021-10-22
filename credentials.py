@@ -90,7 +90,39 @@ class Credentials:
 
     
     
+    # Method to find credentials
+    @classmethod
+    def find_credentials(cls, credentials_name, credentials_password):
+        
+        '''
+        Method that takes in credentials name and returns the credentials saved.
+        Args
+            name: name of the platform e.g facebook
+        Returns :
+            credentials name & password.
+        '''
+
+
+
+        # Checking credentials if match
+        for credentials in cls.credentials_list:
+            if credentials_name == credentials_name and credentials_password == credentials_password:
+                return credentials
+
     
+    
+    # Deleting credentials
+    @classmethod
+    def delete_credentials(credentials_name, credentials_password):
+    
+        '''
+        Method that deletes user credentials
+        '''
+
+
+        Credentials.credentials_list.remove()
+
+
 
 if __name__ =='__main__':
     unittest.main()
