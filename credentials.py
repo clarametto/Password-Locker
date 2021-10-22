@@ -49,9 +49,48 @@ class Credentials:
         return password
 
 
-   
+    @classmethod
+    def display_credentials(cls, user_name):
+        
+        '''
+        Method that  returns credentials_list
+        Args:credentials_email: the email of the credentials account
+            password: user password
+        '''
 
 
+        user_credentials_list = []
+
+        for credentials in cls.credentials_list:
+            if credentials.user_name == user_name:
+                user_credentials_list.append(credentials)
+
+        return user_credentials_list
+
+    
+    
+    @classmethod
+    def credentials_exists(cls, credentials_name):
+        
+        '''
+        Method to check if credentials exists
+        Args
+            name: name of credentials to be searched
+        Returns:
+            Boolean: True or False
+        '''
+
+
+
+        for credentials in cls.credentials_list:
+            if credentials.credentials_name == credentials_name:
+                return True
+
+        return False
+
+    
+    
+    
 
 if __name__ =='__main__':
     unittest.main()
