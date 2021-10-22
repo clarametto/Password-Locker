@@ -27,4 +27,19 @@ class User:
 
         User.user_list.append(self)
 
+
+        # Find user Credentials
+
+        @classmethod
+        def find_credentials(cls, name):
+            '''
+            it will check correct imports
+
+            Args:
+                name: credential name
+            Returns:
+                Boolean: True/False
+            '''
+        
+
         
