@@ -30,16 +30,27 @@ class User:
 
         # Find user Credentials
 
-        @classmethod
-        def find_credentials(cls, name):
-            '''
-            it will check correct imports
+    @classmethod
+    def find_credentials(cls, name):
+        '''
+        it will check correct imports
 
-            Args:
-                name: credential name
-            Returns:
-                Boolean: True/False
-            '''
+        Args:
+            name: credential name
+        Returns:
+            Boolean: True/False
+        '''
+
+        #search in the user list
+        for credentials in Credentials.credentials_list:
+            if credentials.credentials_name == name:
+                return True
+
+        return False
+        
+
+
+
         
 
         
