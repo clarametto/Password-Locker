@@ -47,7 +47,27 @@ class User:
                 return True
 
         return False
-        
+
+    @classmethod
+    def log_in(cls, name, password):
+        '''
+        method that allows user to login his/her account
+        Args:
+            name: name of user
+            password: password for user
+        returns:
+            user credentials: if name and password match
+                else:
+
+                    False 
+        '''
+
+
+        for user in cls.user_list:
+            if user.user_name ==name and user.user_password ==password:
+                return Credentials.credentials_list
+            return False
+            
 
 
 
