@@ -20,5 +20,11 @@ class User:
         self.user_name = user_name
     
 
+    def save_user(self):
+        '''
+        it saves new user in the user_list[] above
+        '''
 
+        User.user_list.append(self)
 
+        
