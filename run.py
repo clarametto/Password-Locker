@@ -216,20 +216,70 @@ def main():
                 print("\n")
                 
         
-        # elif short_code == "lg":
+        elif short_code == "lg":
+            '''
+            code that allow users to login into their own password locker account
+            '''
+            print("\n")
+            print("*"*20)
+            print("Please login to your account")
+            
+            print("Enter your user_name")
+            user_name = input()
+
+            print("Enter your password")
+            user_password = input
+
+            if user_log_in(user_name,user_password) == None:
+                print("\n")
+                print("*"*20)
+                print("There is not much for details you have entered")
+                print("\n")
+
+            else:
+                user_log_in(user_name, user_password)
+                print("\n")
+                print("*"*20)
+                print(f"""Welcome {user_name} You have successfully logged into your Account\n 
+                
+                Use short codes below for more...""")
+
+                while True:
+                    print(""" Short codes:
+                    ac = add credentials  \n
+                    dc - display credentials \n
+                    gc - autogenerate credentials password \n
+                    dlt - delete credentials \n
+                    ext - exit credentials """)
+
+            # Convert user input to lower case
+                short_code = input().lower()
+
+
+                if short_code == "ac":
+                    
+                # elif short_code == "dc":
+                # elif short_code == "gc":
+                # elif short_code == "dlt":
+                # elif short_code == "ext":
+                # else:
+
+        
         elif short_code == "exit":
             '''
             leaving password locker account
             '''
             print("\n")
             print("Good bye, see you next time. \n To return just type:python3 run.py")
-
+            
+            break
 
         else:
             print("\n")
             print(f''' That choice is invalid. Please check {short_code}
             Please use correct short code''')
             print("\n")
+            
 
 
 
