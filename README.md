@@ -11,7 +11,7 @@ You can install it with the following command in your terminal
 To access this project on your local files, you can clone it using these steps
 1. Open your terminal
 1. Use this command to clone `$ git clone https://github.com/clarametto/Password-Locker.git`
-1. This will clone the repository into your local folder. Then 'cd Password-Locker'
+1. This will clone the repository into your local folder. Then `cd Password-Locker`
 1. Run the command `python3 account_test.py` in the terminal to test user account code.
 1. Run the command `python3 account_credential_test.py` in the terminal to test account credentials code.
 
@@ -31,7 +31,7 @@ To access this project on your local files, you can clone it using these steps
    - `delete-credential`: command to delete credentials
 ## Technologies Used
 - Python
-### Dependancies
+### Dependencies
 * Pyperclip
 * Random
 ### Contact
