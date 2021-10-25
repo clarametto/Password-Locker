@@ -32,7 +32,7 @@ To access this project on your local files, you can clone it using these steps
 ## Technologies Used
 - Python
 ### Contact
-Phone No: **[+254 712 258 880]**  
+Phone No: **+254 712 258 880**  
 Email: **[clara.metto@student.moringaschool.com](mailto:clara.metto@student.moringaschool.com)**
 ### License
 This project is under:  
