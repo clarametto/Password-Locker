@@ -31,6 +31,9 @@ To access this project on your local files, you can clone it using these steps
    - `delete-credential`: command to delete credentials
 ## Technologies Used
 - Python
+### Dependencies
+* Pyperclip
+* Random
 ### Contact
 Phone No: **+254 712 258 880**  
 Email: **[clara.metto@student.moringaschool.com](mailto:clara.metto@student.moringaschool.com)**
