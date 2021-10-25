@@ -305,7 +305,7 @@ def main():
         print("That user does not exist")
 
     elif short_code == "exit":
-      print("Bye Bye .......")
+      print("Bye Bye, to return just type: python3 run.py .......")
       break
     else:
       print("")
